@@ -5,19 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOCIAL FRONT</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <style> @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Silkscreen&display=swap'); </style>
+    <link rel="stylesheet" href="/css/index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Righteous&family=Silkscreen&display=swap');
+    </style>
 </head>
-<header class="navbar">
-    <nav id="navbar">
-        <a href="./index.html" class="link"> <img id="logo" src="./img/logo.png"> </a> <!– LOGO –>
-        <a href="./index.html" class="link"> PÁGINA INICIAL </a> <!– aqui precisa conter o botão de login e recuperação de senha –>
-        <a href="./html/como-funciona.html" class="link"> COMO FUNCIONA? </a> <!– detalhar a rede social –>
-        <a href="./html/cadastro.html" class="link"> PÁGINA DE CADASTRO </a> <!– aqui precisa conter o formulário, usar API via cep –>
-        <a href="./html/quem-somos.html" class="link"> QUEM SOMOS </a> <!– participantes do grupo –>
+<header>
+    <nav>
+        <a href="/index.html" id="topo"><h1>SOCIAL FRONT</h1></a> <!– LOGO –>
     </nav>
 </header>
+
 <body>
-        <script src="js/index.js"></script>
+    <div class="navbar">
+        <nav id="itens-nav">
+            <a href="/index.html" class="link"> LOGIN </a> <!– aqui precisa conter o botão de login e recuperação de senha –>
+            <a href="/html/como-funciona.html" class="link"> CADASTRE-SE </a> <!– detalhar a rede social –>
+            <a href="/html/cadastro.html" class="link"> COMO FUNCIONA? </a> <!– aqui precisa conter o formulário, usar API via cep –>
+            <a href="/html/quem-somos.html" class="link"> QUEM SOMOS </a> <!– participantes do grupo –>
+        </nav>
+    </div>
+    
+<footer id="base"> Todos os direitos reservados.</footer>
+
+    <script src="js/index.js"></script>
 </body>
+
 </html>
