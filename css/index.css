@@ -27,9 +27,17 @@ header {
     color: #fc4c02;
     border:#fff} 
 
+
+footer {
+    box-shadow: 0px 3px 10px grey;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+}
 #base {
     font-family: 'Anton', sans-serif, 'Righteous', cursive, 'Silkscreen', cursive;
-    box-shadow: 0px 3px 10px grey;
     background-color: #66ddd0;
     padding: 10px;
     font-size: 20px;
@@ -113,3 +121,91 @@ header {
     margin-left: 15px;
     justify-content: right;}
 
+/*ESSA PARTE É REFERENTE A ABA "COMO FUNCIONA */
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;   
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip.card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 16px;
+}
+
+.flip.card-front {
+    background-image:
+    linear-gradient(
+        45deg, #fc4c02, #fd9467
+    );
+}
+
+.flip-card img {
+    width: 220px;
+    margin-top: 1rem;
+}
+
+.flip-card-back {
+    background-image: linear-gradient(
+        315deg, #fc4c02, #fd9467
+    );
+    color: #fff;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back img {
+    width: 140px;
+    margin-top: 1rem;
+}
+
+.flip-card-back h3 {
+    margin-bottom: 0.3rem;
+}
+
+.flip-card-back h1 {
+    margin: 0;
+}
+
+.flip-card {
+    font-family: 'Righteous', cursive, 'Silkscreen', cursive;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 0px 100px 100px 100px;
+}
+
+.flip-card-back{
+    text-align: left;
+    padding: 20px;
+}
+
+.quemsomos {
+    font-family: 'Anton', sans-serif, 'Righteous', cursive, 'Silkscreen', cursive;
+    text-align: center;
+    color: #fff;
+    margin-top: 100px;
+    padding: 30px;
+    background-color:#fc4d02a2;
+    border-radius: 20px;
+}
