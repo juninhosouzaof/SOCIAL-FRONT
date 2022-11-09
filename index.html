@@ -1,52 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOCIAL FRONT</title>
     <link rel="stylesheet" href="/css/index.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Righteous&family=Silkscreen&display=swap');
-    </style>
+
 </head>
 <header>
     <nav>
-        <a href="/index.html" id="topo"><h1>SOCIAL FRONT</h1></a> <!– LOGO –>
+        <a href="/index.html" id="topo">
+            <h1>SOCIAL FRONT</h1>
+        </a>
+        <!– LOGO –>
     </nav>
 </header>
 
 <body>
-
+    <!--Menu de navegação-->
     <div class="navbar">
         <nav id="itens-nav">
-            <a href="/index.html" class="link"> LOGIN </a> <!– aqui precisa conter o botão de login e recuperação de senha –>
-            <a href="/html/cadastro.html" class="link"> CADASTRE-SE </a> <!– detalhar a rede social –>
-            <a href="/html/como-funciona.html" class="link"> COMO FUNCIONA? </a> <!– aqui precisa conter o formulário, usar API via cep –>
-            <a href="/html/quem-somos.html" class="link"> QUEM SOMOS </a> <!– participantes do grupo –>
+            <a href="/index.html" class="link"> LOGIN </a>
+            <!– aqui precisa conter o botão de login e recuperação de senha –>
+                <a href="/html/cadastro.html" class="link"> CADASTRE-SE </a>
+                <!– detalhar a rede social –>
+                    <a href="/html/como-funciona.html" class="link"> COMO FUNCIONA? </a>
+                    <!– aqui precisa conter o formulário, usar API via cep –>
+                        <a href="/html/quem-somos.html" class="link"> QUEM SOMOS </a>
+                        <!– participantes do grupo –>
         </nav>
     </div>
 
+    <!--Formulário de Login-->
     <div class="box-login">
         <form id="preencimento-login">
             <div class="entradas-dados">
                 <label for="input_email">E-mail</label>
-                <input type="email" name="input_email" id="input-email" placeholder="Digite seu e-mail" value='' required>
+                <input type="email" name="input_email" id="input-email" placeholder="Digite seu e-mail" value=''
+                    required>
 
                 <label for="input_senha">Senha</label>
                 <input type="password" name="input_pass" id="input-senha" placeholder="Digite sua senha" required>
             </div>
-                <div id="botoes">
-                    <button class="enter">Entrar</button>
-                    <button class="recuperar-senha">Recuperar senha</button>
-                    <button class="recuperar-senha">Cadastre-se</button>
-                </div>
+            <div id="botoes">
+                <button class="enter">Entrar</button>
+                <button class="recuperar-senha">Recuperar senha</button>
+                <button class="recuperar-senha">Cadastre-se</button>
+            </div>
         </form>
     </div>
-    
-<footer id="base"> Todos os direitos reservados.</footer>
 
-<script src="js/index.js"></script>
+
+    <!--Rodapé-->
+    <footer>
+        <p id="base">Módulo 2 - Grupo 4 - Programadores Cariocas <br> Todos os direitos reservados</p>
+    </footer>
+
+    <script src="js/index.js"></script>
 
 </body>
 

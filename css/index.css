@@ -1,14 +1,15 @@
 /* Essa parte é de apenas do layout*/
 
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
+    
 }
 
 body {
     background-image: url(/img/background.jpg);
     background-attachment: scroll;
-    background-size:cover;
+    background-size: auto;
     background-repeat: no-repeat;
 }
 
@@ -25,48 +26,59 @@ header {
 #topo {
     text-decoration: none;
     color: #fc4c02;
-    border:#fff} 
+    border: #fff
+}
 
 
 footer {
     box-shadow: 0px 3px 10px grey;
     bottom: 0;
     left: 0;
-    height: 40px;
+    height: 60px;
     position: fixed;
     width: 100%;
 }
+
 #base {
     font-family: 'Anton', sans-serif, 'Righteous', cursive, 'Silkscreen', cursive;
     background-color: #66ddd0;
-    padding: 10px;
-    font-size: 20px;
+    color: #fc4c02;
+    padding: 8px;
+    font-size: 16px;
     text-align: center;
 }
 
 .navbar {
+    display: flex;
+    justify-content: center;
     font-family: 'Anton', sans-serif, 'Righteous', cursive, 'Silkscreen', cursive;
     box-shadow: 0px 3px 10px grey;
     background-color: #ffede6;
-    padding: 20px;
-    font-size: 30px;
+    padding: 10px;
+    font-size: 24px;
     text-align: center;
     text-decoration: none;
-    display: flex;
 }
+
 .link {
     text-decoration: none;
     color: #00c7b1;
-    border-color: #fff;
-    border:20px;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
-    margin: 130px;}
+    margin: 80px;
+    padding: 8px;
+}
+
+.link:hover {
+    transition: 0.4s;
+    color: #fc4c02;
+    padding: 8px;
+}
 
 /*Essa parte é a de login*/
 
 
-.box-login{
+.box-login {
     background-color: #fd9467;
     display: flex;
     margin: 100px auto;
@@ -83,7 +95,7 @@ footer {
     align-items: center;
 }
 
-.entradas-dados{
+.entradas-dados {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -92,7 +104,8 @@ footer {
     font-size: 30px;
 }
 
-#input-email, #input-senha{
+#input-email,
+#input-senha {
     background-color: #011C26;
     width: 350px;
     padding: 5px;
@@ -101,15 +114,16 @@ footer {
     color: white;
 }
 
-#input-senha:focus{
+#input-senha:focus {
     background-color: #043d52;
     outline: 0;
-    border: none; 
+    border: none;
     color: white;
 }
 
 
-.enter, .recuperar-senha{
+.enter,
+.recuperar-senha {
     height: 30px;
     width: auto;
     font-size: 20px;
@@ -119,93 +133,5 @@ footer {
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 15px;
-    justify-content: right;}
-
-/*ESSA PARTE É REFERENTE A ABA "COMO FUNCIONA */
-
-.flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 400px;
-    perspective: 1000px;
-}
-
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;   
-}
-
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-.flip.card-front,
-.flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-radius: 16px;
-}
-
-.flip.card-front {
-    background-image:
-    linear-gradient(
-        45deg, #fc4c02, #fd9467
-    );
-}
-
-.flip-card img {
-    width: 220px;
-    margin-top: 1rem;
-}
-
-.flip-card-back {
-    background-image: linear-gradient(
-        315deg, #fc4c02, #fd9467
-    );
-    color: #fff;
-    transform: rotateY(180deg);
-}
-
-.flip-card-back img {
-    width: 140px;
-    margin-top: 1rem;
-}
-
-.flip-card-back h3 {
-    margin-bottom: 0.3rem;
-}
-
-.flip-card-back h1 {
-    margin: 0;
-}
-
-.flip-card {
-    font-family: 'Righteous', cursive, 'Silkscreen', cursive;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-    padding: 0px 100px 100px 100px;
-}
-
-.flip-card-back{
-    text-align: left;
-    padding: 20px;
-}
-
-.quemsomos {
-    font-family: 'Anton', sans-serif, 'Righteous', cursive, 'Silkscreen', cursive;
-    text-align: center;
-    color: #fff;
-    margin-top: 100px;
-    padding: 30px;
-    background-color:#fc4d02a2;
-    border-radius: 20px;
+    justify-content: right;
 }
